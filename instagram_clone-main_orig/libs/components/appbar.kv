@@ -1,0 +1,19 @@
+<AppBar@MDBoxLayout>:
+    padding: '5dp'
+    adaptive_height: True
+
+    MDIconButton:
+        icon: 'plus'
+    
+    MDLabel:
+        text: 'Instagram'
+        halign: 'center'
+        valign: 'center'
+        font_size: 30
+        font_name: "assets/font/billabong.ttf"
+    
+    MDIconButton:
+        icon: 'facebook-messenger'
+        on_press:
+            app.root.transition.direction = 'right'
+            app.root.current = 'settings'
